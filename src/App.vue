@@ -1,14 +1,17 @@
 <script setup>
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-// import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/PlanetModel.vue'
 // import StatuteModel from './components/StatuteModel.vue'
-import SpaceParticles from './components/SpaceParticles.vue'
+// import SpaceParticles from './components/SpaceParticles.vue'
 </script>
 
 <template>
-  <!--  <HelloWorld />-->
-  <SpaceParticles />
+  <div>
+    <div>首页</div>
+    <router-view />
+  </div>
+  <div />
 </template>
 
 <style scoped>
