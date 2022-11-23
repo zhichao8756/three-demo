@@ -162,10 +162,10 @@ function createParticlesByCanvas () {
 // 创建宇航员模型
 function createModel () {
   const loader = new GLTFLoader()
-  loader.load('./models/astronaut2.glb', mesh => {
+  loader.load('./models/astronaut.glb', mesh => {
     astronaut = mesh.scene
     astronaut.material = new THREE.MeshLambertMaterial()
-    astronaut.scale.set(0.00005, 0.00005, 0.00005)
+    astronaut.scale.set(0.0005, 0.0005, 0.0005)
     astronaut.position.z = 0.08 * Math.sin(t) + (camera.position.z - 0.2)
     scene.add(astronaut)
   })
