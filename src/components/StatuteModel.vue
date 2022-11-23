@@ -136,14 +136,14 @@ function loadingManage () {
 function loadModel () {
   // 使用 dracoLoader 加载用blender压缩过的模型
   const dracoLoader = new DRACOLoader()
-  dracoLoader.setDecoderPath('/draco/')
+  dracoLoader.setDecoderPath('./draco/')
   dracoLoader.setDecoderConfig({ type: 'js' })
   const loader = new GLTFLoader(loadingManager)
   loader.setDRACOLoader(dracoLoader)
 
   // 模型加载
   let oldMaterial
-  loader.load('/models/statue.glb', function (gltf) {
+  loader.load('./models/statue.glb', function (gltf) {
     gltf.scene.traverse((obj) => {
       if (obj.isMesh) {
         console.log(213333)
