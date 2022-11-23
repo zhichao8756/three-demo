@@ -8,10 +8,8 @@
 
 <template>
   <div>
-    <div>首页</div>
     <router-view />
   </div>
-  <div />
 </template>
 
 <style scoped>

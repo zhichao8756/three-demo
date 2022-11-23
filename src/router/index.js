@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import Home from '@/App.vue'
+import HomePage from '@/views/HomePage.vue'
 import PlanetModel from '@/views/PlanetModel.vue'
 import SpaceParticles from '@/views/SpaceParticles.vue'
 import StatueModel from '@/views/StatueModel.vue'
@@ -10,7 +10,7 @@ const Router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: HomePage
     },
     {
       path: '/planet',
