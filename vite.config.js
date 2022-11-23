@@ -16,5 +16,5 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
       '@node_modules': path.resolve(__dirname, './node_modules')
     }
-  },
+  }
 })
